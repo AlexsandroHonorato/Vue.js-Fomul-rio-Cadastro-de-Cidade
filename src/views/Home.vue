@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="margin-home">
+    <div class="row">
+        <div class="md-12">
+            <MenuFilter msg='Cadastro e Cidades'/>
+            <ModalRegister/>
+            <TabelRegisterCity/>
+        </div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import ModalRegister from '../components/Modal_Register.vue'
+import TabelRegisterCity from '../components/Table_Register_City.vue'
+import MenuFilter from '../components/Menu_Filter.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    ModalRegister, 
+    TabelRegisterCity,
+    MenuFilter
   }
 }
 </script>
