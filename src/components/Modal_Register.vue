@@ -73,6 +73,7 @@
 <script>
 import { Form, Field } from 'vee-validate';
 import * as Yup from 'yup';
+//import {http} from '../services/APIServices';
 
 
 export default {
@@ -81,7 +82,7 @@ export default {
         Field       
     },
     data(){
-        return{                            
+        return{                                    
             city:{
                 ibge: null,
                 uf: '',
@@ -108,7 +109,6 @@ export default {
                 .required('O campo região é obrigatório')
         
         });
-
         const onSubmit = values => {
             // display form values on success
             alert('SUCCESS!! :-)\n\n' + JSON.stringify(values, null, 4));
@@ -120,7 +120,7 @@ export default {
         };
     },
     methods:{
-            
+           
     }
     
 }
